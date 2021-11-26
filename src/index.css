@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Montserrat&family=Noto+Sans:ital@1&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Poppins:wght@200;400&family=Raleway&family=Roboto+Condensed:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Mohave', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+.navlinks{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  background-color: black;
+}
+.navlinks a{
+  color:white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.navlinks a:hover{
+  color:yellow;
+
+}
+.active_class{
+ text-decoration: underline;
+}
+.common{
+  width: 100vw;
+display: flex;
+
+}
+.first{
+  width:50%;
+  padding:15% 12%;
+}
+.first h2{
+  background-image: linear-gradient(135deg, #09203f 10%, #537895 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.first h3{
+  background-image: linear-gradient(135deg, #f9d423 10%, #ff4e50 100%);
+  -webkit-background-clip: text;
+  font-size: 23px;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+.first a{
+text-decoration: none;
+color: green;
+
+ 
+outline: 1px solid green;
+padding: 8px 15px;
+margin-top: 10px;
+transition: all 0.4s ease-in-out;
+border-radius: 5px;
+font-weight: bolder;
+}
+.first a:hover{
+  color:white;
+  background-color: green;
+}
+.secound{
+  width: 50%;
+
+}
+.secound img{
+  width:350px;
+  height: 350px;
+  margin-left: 20%;
+  margin-top: 15%;
+  animation:flora 30s linear infinite alternate;
+}
+@keyframes flora {
+  0%{
+transform: scale(1) rotate(0deg);
+  }
+  50%{
+    transform: scale(1.2) rotate(180deg);
+  }
+  100%{
+    transform: scale(1) rotate(360deg);
+      }
+
+}
+.aboutDiv{
+  position: absolute;
+  top: 200px;
+  left:170px;
+}
+.mainItem{
+
+padding: 30px;
+
+}
+.card{
+  width: 242px;
+  margin:10px 50px;
+  background-color: white;
+  border:0.6px solid grey;
+border-radius: 10px;
+box-shadow: 4px 5px 10px black;
+transition: all 0.3s ease;
+
+}
+.card:hover{
+  transform: scale(1.05);
+  
+}
+.card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgb(88, 84, 84);
+}
+.card h2{
+  padding:5px 10px;
+  font-weight: bolder;
+
+}
+.card p{
+  padding:5px 10px;
+  font-weight: bolder;
+  color:#000057
+}
+.card button{
+  margin: 10px 10px;
+  padding:5px 10px;
+ background-color: transparent;
+  border:2px solid #00002e;
+  border-radius: 5px;
+  color: #00002e;
+  font-weight: bold;
+  transition:all 0.4s ease;
+}
+.card button:hover{
+  background-color:#00002e;
+  color: white;
+  
+}
+.serviceHtl{
+  width:90vw ;
+  margin:auto;
+
+  margin-top:20px ;
+}
+.serviceHtl h1{
+  text-align: center;
+  background-image: linear-gradient(135deg, #29323c 10%, #485563 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.serviceHtl h3{
+  text-align: left;
+  margin-left: 80px;
+}
+.service{
+  width:90vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Contact-Styles */
+
+.inputs{
+ text-align: center;
+ margin-top: 100px;
+}
+
+.inputs input{
+  width: 20%;
+  height: 25px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00002e;
+  background-color: transparent;
+}
+.inputs h1{
+  padding-bottom: 30px;
+}
+.inputs input::placeholder{
+  color: #00002e;
+  background-color: transparent;
+}
+.inputs button{
+  width: 90px;
+  height: 35px;
+   background-color: transparent;
+   outline: none;
+   border: 2px solid #00002e;
+  font-size: 18px;
+  position: relative;
+  right:90px;
+  margin: 10px;
+ transition: all 0.3s ease-in-out;
+
+}
+.inputs button:hover{
+  color: white;
+  background-color: #00002e;
+}
